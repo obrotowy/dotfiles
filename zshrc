@@ -70,7 +70,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,7 +105,3 @@ source $ZSH/oh-my-zsh.sh
 alias nvidia-run="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
 alias check-leaks="valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose"
 export LIBVA_DRIVER_NAME=iHD
-export WINEPREFIX=/home/obrotowy/.wine.heartstone
-[ -f "/home/obrotowy/.ghcup/env" ] && . "/home/obrotowy/.ghcup/env" # ghcup-env
-export DXVK_FILTER_DEVICE_NAME="Intel(R) UHD Graphics 630 (CFL GT2)"
-export PATH="$PATH:/opt/ghidra"
